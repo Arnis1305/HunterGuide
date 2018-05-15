@@ -20,5 +20,14 @@ namespace HunterGuide.Singletons
             }
             return provider.context;
         }
+
+        public static void Dispose() 
+        {
+            if (provider == null) 
+            {
+                return;
+            }
+            provider.context.Dispose();
+        }
     }
 }

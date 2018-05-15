@@ -1,6 +1,9 @@
 ﻿using HunterGuide.EF.Entities;
+using HunterGuide.Exceptions;
 using HunterGuide.Helpers;
+using HunterGuide.Models;
 using HunterGuide.Singletons;
+using HunterGuide.Validators;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -10,11 +13,14 @@ namespace HunterGuide.Forms
     public partial class LoginForm : Form
     {
         private readonly EF.ApplicationContext context;
+        private LoginModelValidator loginValidator;
 
         public LoginForm()
         {
             InitializeComponent();
+
             context = ContextProvider.GetApplicationContext();
+            loginValidator = new LoginModelValidator();
         }
 
         private void CloseButton_Click(object sender, EventArgs e)
@@ -33,34 +39,52 @@ namespace HunterGuide.Forms
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(UsernameInput.Text) || string.IsNullOrEmpty(PasswordInput.Text))
+            try 
             {
-                ShowErrorMessage();
+                LoginModel model = GetLoginModelFromInputs();
+                loginValidator.Validate(model);
+                TryToLogin(model);
+            }
+            catch (ValidationException ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void TryToLogin(LoginModel model) 
+        {
+            model.Password = HashGenerator.GenerateHash(model.Password);
+            var appUser = context.Users.FirstOrDefault(u => u.Username.Equals(model.Username) && u.PasswordHash.Equals(model.Password));
+            if (appUser == null) 
+            {
+                MessageBox.Show("Invalid credentials");
                 return;
             }
-            ApplicationUser user = TryToLogin(UsernameInput.Text, PasswordInput.Text);
-            if (user == null)
-            {
-                ShowErrorMessage();
-                return;
+            HandleSuccessfullLogin(appUser);
+        }
+
+        private void HandleSuccessfullLogin(ApplicationUser user) 
+        {
+            if (UserInRole(user, "User")) {
+                MessageBox.Show("you in role 'User'");
+            }
+            if (UserInRole(user, "Admin")) {
+                MessageBox.Show("you in role 'Admin'");
             }
         }
 
-        private ApplicationUser TryToLogin(string username, string password)
+        private bool UserInRole(ApplicationUser user, string roleName) 
         {
-            string passwordHash = HashGenerator.GenerateHash(password);
-            return context.Users.FirstOrDefault(u => u.Username.Equals(username) && u.PasswordHash.Equals(passwordHash));
-        }
+            return context.Roles.Any(r => r.RoleName.Equals(roleName) && r.Id == user.RoleId);
+        } 
 
-        private void HandleLogin(ApplicationUser user)
+        private LoginModel GetLoginModelFromInputs() 
         {
-            Role userRole = user.Role;
-        }
-
-        private void ShowErrorMessage()
-        {
-            MessageBox.Show("Please, enter fill field with correct credentials and try again");
-            return;
+            return new LoginModel 
+            {
+                Username = UsernameInput.Text,
+                Password = PasswordInput.Text
+            };
         }
     }
 }
