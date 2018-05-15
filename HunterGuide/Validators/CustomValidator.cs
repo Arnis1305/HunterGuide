@@ -27,7 +27,7 @@ namespace HunterGuide.Validators
             }
         }
 
-        public CustomValidator<T> RuleFor(Func<T, bool> rule) 
+        public ICustomValidator<T> RuleFor(Func<T, bool> rule) 
         {
             RuleMessagePairModel<T> pairModel = new RuleMessagePairModel<T> {
                 Rule = rule,
@@ -37,7 +37,7 @@ namespace HunterGuide.Validators
             return this;
         }
 
-        public CustomValidator<T> WithMessage(string message) 
+        public ICustomValidator<T> WithMessage(string message) 
         {
             var lastRule = ruleList.ElementAt(ruleList.Count - 1);
             ruleList = ruleList.Select(rule => {
