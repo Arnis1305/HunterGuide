@@ -1,5 +1,6 @@
 ﻿using HunterGuide.EF.Entities;
 using HunterGuide.Exceptions;
+using HunterGuide.Forms.AdminUI;
 using HunterGuide.Helpers;
 using HunterGuide.Models;
 using HunterGuide.Singletons;
@@ -65,11 +66,14 @@ namespace HunterGuide.Forms
 
         private void HandleSuccessfullLogin(ApplicationUser user) 
         {
+            if (UserInRole(user, "Admin"))
+            {
+                ShowAdminUIMainForm(user);
+                return;
+            }
+
             if (UserInRole(user, "User")) {
                 MessageBox.Show("you in role 'User'");
-            }
-            if (UserInRole(user, "Admin")) {
-                MessageBox.Show("you in role 'Admin'");
             }
         }
 
@@ -77,6 +81,24 @@ namespace HunterGuide.Forms
         {
             return context.Roles.Any(r => r.RoleName.Equals(roleName) && r.Id == user.RoleId);
         } 
+
+        private void ShowAdminUIMainForm(ApplicationUser user)
+        {
+            AdminMainForm adminMainForm = new AdminMainForm(user);
+            Hide();
+            adminMainForm.FormClosed += (s, args) => HandleChildFormClosed(s, args);
+            adminMainForm.Show();
+        }
+
+        private void HandleChildFormClosed(object sender, FormClosedEventArgs args)
+        {
+            if (args.CloseReason == CloseReason.UserClosing)
+            {
+                Close();
+                return;
+            }
+            Show();
+        }
 
         private LoginModel GetLoginModelFromInputs() 
         {

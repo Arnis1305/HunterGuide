@@ -56,6 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AdminUI\ActivateUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUI\ActivateUserForm.Designer.cs">
+      <DependentUpon>ActivateUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminUI\AdminMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUI\AdminMainForm.Designer.cs">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="Validators\LoginModelValidator.cs" />
     <Compile Include="Validators\RegistrationModelValidator.cs" />
+    <EmbeddedResource Include="Forms\AdminUI\ActivateUserForm.resx">
+      <DependentUpon>ActivateUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminUI\AdminMainForm.resx">
+      <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

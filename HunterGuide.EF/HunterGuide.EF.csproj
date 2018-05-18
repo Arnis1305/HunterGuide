@@ -54,6 +54,14 @@
     <Compile Include="Migrations\201805141151249_Initial.Designer.cs">
       <DependentUpon>201805141151249_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805180739155_AddingFieldIsActivatedToApplicationUserEntity.cs" />
+    <Compile Include="Migrations\201805180739155_AddingFieldIsActivatedToApplicationUserEntity.Designer.cs">
+      <DependentUpon>201805180739155_AddingFieldIsActivatedToApplicationUserEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805180742059_AddingFieldIsRejectedToApplicationUserEntity.cs" />
+    <Compile Include="Migrations\201805180742059_AddingFieldIsRejectedToApplicationUserEntity.Designer.cs">
+      <DependentUpon>201805180742059_AddingFieldIsRejectedToApplicationUserEntity.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +72,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201805141151249_Initial.resx">
       <DependentUpon>201805141151249_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805180739155_AddingFieldIsActivatedToApplicationUserEntity.resx">
+      <DependentUpon>201805180739155_AddingFieldIsActivatedToApplicationUserEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805180742059_AddingFieldIsRejectedToApplicationUserEntity.resx">
+      <DependentUpon>201805180742059_AddingFieldIsRejectedToApplicationUserEntity.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
