@@ -56,11 +56,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AdminUI\ActivateUserForm.cs">
+    <Compile Include="Forms\AdminUI\ManageUsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminUI\ActivateUserForm.Designer.cs">
-      <DependentUpon>ActivateUserForm.cs</DependentUpon>
+    <Compile Include="Forms\AdminUI\ManageUsersForm.Designer.cs">
+      <DependentUpon>ManageUsersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminUI\AdminMainForm.cs">
       <SubType>Form</SubType>
@@ -80,6 +80,7 @@
     <Compile Include="Forms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Emums\ManageUsersFormType.cs" />
     <Compile Include="Helpers\HashGenerator.cs" />
     <Compile Include="Helpers\RegexMatcher.cs" />
     <Compile Include="Interfaces\ICustomValidator.cs" />
@@ -95,8 +96,8 @@
     <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="Validators\LoginModelValidator.cs" />
     <Compile Include="Validators\RegistrationModelValidator.cs" />
-    <EmbeddedResource Include="Forms\AdminUI\ActivateUserForm.resx">
-      <DependentUpon>ActivateUserForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AdminUI\ManageUsersForm.resx">
+      <DependentUpon>ManageUsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminUI\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>

@@ -1,4 +1,5 @@
 ﻿using HunterGuide.EF.Entities;
+using HunterGuide.Helpers.Emums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +31,14 @@ namespace HunterGuide.Forms.AdminUI
 
         private void activateToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new ActivateUserForm().Show();
+            ManageUsersForm activateUserForm = new ManageUsersForm(ManageUsersFormType.ManageNotActivatedUsers);
+            activateUserForm.Show();
+        }
+
+        private void allToolStripMenuItem_Click(object sender, EventArgs e) 
+        {
+            ManageUsersForm manageUsersForm = new ManageUsersForm(ManageUsersFormType.ManageActivatedUsers);
+            manageUsersForm.Show();
         }
     }
 }
