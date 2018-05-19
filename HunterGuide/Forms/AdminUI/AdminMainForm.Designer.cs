@@ -1,5 +1,7 @@
 ﻿namespace HunterGuide.Forms.AdminUI
 {
+    using MetroFramework.Controls;
+
     partial class AdminMainForm
     {
         /// <summary>
@@ -34,13 +36,13 @@
             this.showAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.activateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageRolesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.resultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LogoutButton = new System.Windows.Forms.Button();
-            this.WelcomeLable = new System.Windows.Forms.Label();
-            this.allToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LogoutButton = new MetroFramework.Controls.MetroButton();
+            this.WelcomeLable = new MetroFramework.Controls.MetroLabel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,10 +53,10 @@
             this.testToolStripMenuItem,
             this.usersToolStripMenuItem,
             this.aboutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(535, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(495, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,10 +84,10 @@
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.allToolStripMenuItem,
             this.activateToolStripMenuItem,
-            this.resultsToolStripMenuItem,
-            this.manageRolesToolStripMenuItem});
+            this.allToolStripMenuItem,
+            this.manageRolesToolStripMenuItem,
+            this.resultsToolStripMenuItem});
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
             this.usersToolStripMenuItem.Text = "Users";
@@ -93,21 +95,29 @@
             // activateToolStripMenuItem
             // 
             this.activateToolStripMenuItem.Name = "activateToolStripMenuItem";
-            this.activateToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.activateToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.activateToolStripMenuItem.Text = "Activate";
             this.activateToolStripMenuItem.Click += new System.EventHandler(this.activateToolStripMenuItem_Click);
             // 
-            // resultsToolStripMenuItem
+            // allToolStripMenuItem
             // 
-            this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
-            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.resultsToolStripMenuItem.Text = "Results";
+            this.allToolStripMenuItem.Name = "allToolStripMenuItem";
+            this.allToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.allToolStripMenuItem.Text = "Manage Activated";
+            this.allToolStripMenuItem.Click += new System.EventHandler(this.allToolStripMenuItem_Click);
             // 
             // manageRolesToolStripMenuItem
             // 
             this.manageRolesToolStripMenuItem.Name = "manageRolesToolStripMenuItem";
-            this.manageRolesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.manageRolesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.manageRolesToolStripMenuItem.Text = "Manage Roles";
+            this.manageRolesToolStripMenuItem.Click += new System.EventHandler(this.manageRolesToolStripMenuItem_Click);
+            // 
+            // resultsToolStripMenuItem
+            // 
+            this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
+            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.resultsToolStripMenuItem.Text = "Results";
             // 
             // aboutToolStripMenuItem
             // 
@@ -125,31 +135,23 @@
             // 
             // LogoutButton
             // 
-            this.LogoutButton.Location = new System.Drawing.Point(9, 347);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LogoutButton.Location = new System.Drawing.Point(430, 23);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2);
             this.LogoutButton.Name = "LogoutButton";
             this.LogoutButton.Size = new System.Drawing.Size(62, 24);
             this.LogoutButton.TabIndex = 1;
             this.LogoutButton.Text = "Logout";
-            this.LogoutButton.UseVisualStyleBackColor = true;
             this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // WelcomeLable
             // 
             this.WelcomeLable.AutoSize = true;
-            this.WelcomeLable.Location = new System.Drawing.Point(9, 32);
+            this.WelcomeLable.Location = new System.Drawing.Point(35, 28);
             this.WelcomeLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WelcomeLable.Name = "WelcomeLable";
-            this.WelcomeLable.Size = new System.Drawing.Size(58, 13);
+            this.WelcomeLable.Size = new System.Drawing.Size(71, 19);
             this.WelcomeLable.TabIndex = 2;
             this.WelcomeLable.Text = "Welcome, ";
-            // 
-            // allToolStripMenuItem
-            // 
-            this.allToolStripMenuItem.Name = "allToolStripMenuItem";
-            this.allToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.allToolStripMenuItem.Text = "Show All";
-            this.allToolStripMenuItem.Click += new System.EventHandler(this.allToolStripMenuItem_Click);
             // 
             // AdminMainForm
             // 
@@ -160,9 +162,8 @@
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AdminMainForm";
-            this.Text = "AdminMainForm";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -182,8 +183,8 @@
         private System.Windows.Forms.ToolStripMenuItem manageRolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
-        private System.Windows.Forms.Button LogoutButton;
-        private System.Windows.Forms.Label WelcomeLable;
+        private MetroButton LogoutButton;
+        private MetroLabel WelcomeLable;
         private System.Windows.Forms.ToolStripMenuItem allToolStripMenuItem;
     }
 }

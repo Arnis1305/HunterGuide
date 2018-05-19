@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201805180742059_AddingFieldIsRejectedToApplicationUserEntity.Designer.cs">
       <DependentUpon>201805180742059_AddingFieldIsRejectedToApplicationUserEntity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805182116497_UpdateApplicationUserAddStatusTypeFild.cs" />
+    <Compile Include="Migrations\201805182116497_UpdateApplicationUserAddStatusTypeFild.Designer.cs">
+      <DependentUpon>201805182116497_UpdateApplicationUserAddStatusTypeFild.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -78,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805180742059_AddingFieldIsRejectedToApplicationUserEntity.resx">
       <DependentUpon>201805180742059_AddingFieldIsRejectedToApplicationUserEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805182116497_UpdateApplicationUserAddStatusTypeFild.resx">
+      <DependentUpon>201805182116497_UpdateApplicationUserAddStatusTypeFild.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

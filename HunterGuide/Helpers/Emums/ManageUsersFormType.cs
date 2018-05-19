@@ -3,6 +3,7 @@
     public enum ManageUsersFormType 
     {
         ManageNotActivatedUsers,
-        ManageActivatedUsers
+        ManageActivatedUsers,
+        ManageUserRoles
     }
 }

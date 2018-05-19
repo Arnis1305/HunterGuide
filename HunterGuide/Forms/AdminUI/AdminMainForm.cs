@@ -1,5 +1,6 @@
 ﻿using HunterGuide.EF.Entities;
 using HunterGuide.Helpers.Emums;
+using MetroFramework.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace HunterGuide.Forms.AdminUI
 {
-    public partial class AdminMainForm : Form
+    public partial class AdminMainForm : MetroForm
     {
         private readonly ApplicationUser user;
 
@@ -38,6 +39,12 @@ namespace HunterGuide.Forms.AdminUI
         private void allToolStripMenuItem_Click(object sender, EventArgs e) 
         {
             ManageUsersForm manageUsersForm = new ManageUsersForm(ManageUsersFormType.ManageActivatedUsers);
+            manageUsersForm.Show();
+        }
+
+        private void manageRolesToolStripMenuItem_Click(object sender, EventArgs e) 
+        {
+            ManageUsersForm manageUsersForm = new ManageUsersForm(ManageUsersFormType.ManageUserRoles);
             manageUsersForm.Show();
         }
     }

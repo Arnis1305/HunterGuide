@@ -8,10 +8,11 @@ using AutoMapper;
 using HunterGuide.Helpers;
 using HunterGuide.EF.Entities;
 using System.Linq;
+using MetroFramework.Forms;
 
 namespace HunterGuide.Forms
 {
-    public partial class RegisterForm : Form
+    public partial class RegisterForm : MetroForm
     {
         private readonly IMapper mapper;
         private readonly EF.ApplicationContext context;

@@ -5,13 +5,14 @@ using HunterGuide.Helpers;
 using HunterGuide.Models;
 using HunterGuide.Singletons;
 using HunterGuide.Validators;
+using MetroFramework.Forms;
 using System;
 using System.Linq;
 using System.Windows.Forms;
 
 namespace HunterGuide.Forms
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : MetroForm
     {
         private readonly EF.ApplicationContext context;
         private LoginModelValidator loginValidator;
@@ -92,11 +93,6 @@ namespace HunterGuide.Forms
 
         private void HandleChildFormClosed(object sender, FormClosedEventArgs args)
         {
-            if (args.CloseReason == CloseReason.UserClosing)
-            {
-                Close();
-                return;
-            }
             Show();
         }
 
