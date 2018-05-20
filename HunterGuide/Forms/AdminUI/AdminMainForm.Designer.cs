@@ -53,10 +53,10 @@
             this.testToolStripMenuItem,
             this.usersToolStripMenuItem,
             this.aboutToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
+            this.menuStrip1.Location = new System.Drawing.Point(27, 74);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(495, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(659, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,20 +66,22 @@
             this.newToolStripMenuItem,
             this.showAllToolStripMenuItem});
             this.testToolStripMenuItem.Name = "testToolStripMenuItem";
-            this.testToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.testToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.testToolStripMenuItem.Text = "Tests";
             // 
             // newToolStripMenuItem
             // 
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // showAllToolStripMenuItem
             // 
             this.showAllToolStripMenuItem.Name = "showAllToolStripMenuItem";
-            this.showAllToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.showAllToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.showAllToolStripMenuItem.Text = "Show All";
+            this.showAllToolStripMenuItem.Click += new System.EventHandler(this.showAllToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
@@ -89,56 +91,57 @@
             this.manageRolesToolStripMenuItem,
             this.resultsToolStripMenuItem});
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.usersToolStripMenuItem.Text = "Users";
             // 
             // activateToolStripMenuItem
             // 
             this.activateToolStripMenuItem.Name = "activateToolStripMenuItem";
-            this.activateToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.activateToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.activateToolStripMenuItem.Text = "Activate";
             this.activateToolStripMenuItem.Click += new System.EventHandler(this.activateToolStripMenuItem_Click);
             // 
             // allToolStripMenuItem
             // 
             this.allToolStripMenuItem.Name = "allToolStripMenuItem";
-            this.allToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.allToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.allToolStripMenuItem.Text = "Manage Activated";
             this.allToolStripMenuItem.Click += new System.EventHandler(this.allToolStripMenuItem_Click);
             // 
             // manageRolesToolStripMenuItem
             // 
             this.manageRolesToolStripMenuItem.Name = "manageRolesToolStripMenuItem";
-            this.manageRolesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.manageRolesToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
             this.manageRolesToolStripMenuItem.Text = "Manage Roles";
             this.manageRolesToolStripMenuItem.Click += new System.EventHandler(this.manageRolesToolStripMenuItem_Click);
             // 
             // resultsToolStripMenuItem
             // 
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
-            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.resultsToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.resultsToolStripMenuItem.Text = "Results";
+            this.resultsToolStripMenuItem.Click += new System.EventHandler(this.resultsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // LogoutButton
             // 
-            this.LogoutButton.Location = new System.Drawing.Point(430, 23);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoutButton.Location = new System.Drawing.Point(573, 28);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.LogoutButton.Name = "LogoutButton";
-            this.LogoutButton.Size = new System.Drawing.Size(62, 24);
+            this.LogoutButton.Size = new System.Drawing.Size(83, 30);
             this.LogoutButton.TabIndex = 1;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
@@ -146,24 +149,24 @@
             // WelcomeLable
             // 
             this.WelcomeLable.AutoSize = true;
-            this.WelcomeLable.Location = new System.Drawing.Point(35, 28);
-            this.WelcomeLable.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.WelcomeLable.Location = new System.Drawing.Point(47, 34);
             this.WelcomeLable.Name = "WelcomeLable";
-            this.WelcomeLable.Size = new System.Drawing.Size(71, 19);
+            this.WelcomeLable.Size = new System.Drawing.Size(74, 20);
             this.WelcomeLable.TabIndex = 2;
             this.WelcomeLable.Text = "Welcome, ";
             // 
             // AdminMainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 380);
+            this.ClientSize = new System.Drawing.Size(713, 468);
             this.Controls.Add(this.WelcomeLable);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminMainForm";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

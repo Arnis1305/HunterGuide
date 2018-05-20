@@ -1,6 +1,7 @@
 ﻿using HunterGuide.EF.Entities;
 using HunterGuide.Exceptions;
 using HunterGuide.Forms.AdminUI;
+using HunterGuide.Forms.ClientUI;
 using HunterGuide.Helpers;
 using HunterGuide.Models;
 using HunterGuide.Singletons;
@@ -74,14 +75,23 @@ namespace HunterGuide.Forms
             }
 
             if (UserInRole(user, "User")) {
-                MessageBox.Show("you in role 'User'");
+               // MessageBox.Show("you in role 'User'");
+                ShowUserUIMainForm(user);
             }
         }
 
         private bool UserInRole(ApplicationUser user, string roleName) 
         {
             return context.Roles.Any(r => r.RoleName.Equals(roleName) && r.Id == user.RoleId);
-        } 
+        }
+
+        private void ShowUserUIMainForm(ApplicationUser user)
+        {
+            UserMainForm userMainForm = new UserMainForm();
+            Hide();
+            userMainForm.FormClosed += (s, args) => HandleChildFormClosed(s, args);
+            userMainForm.Show();
+        }
 
         private void ShowAdminUIMainForm(ApplicationUser user)
         {

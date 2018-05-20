@@ -15,21 +15,19 @@ namespace HunterGuide.EF.Migrations
 
         protected override void Seed(HunterGuide.EF.ApplicationContext context)
         {
-            if (context.Roles.Count() == 0) 
+            if (context.Users.Count() == 0)
             {
-                context.Roles.Add(new Role { RoleName = "User" });
-                context.Roles.Add(new Role { RoleName = "Admin" });
-            }
-            if (context.Users.Count() == 0) 
-            {
-                context.Users.Add(new ApplicationUser {
+                context.Users.Add(new ApplicationUser
+                {
                     Username = "admin",
                     FirstName = "admin",
                     LastName = "admin",
                     PasswordHash = "7CeKOJASh7J3GhNzlSA4TUPksHj3iv/nAt7xCHdMziQ=",
-                    RoleId = context.Roles.FirstOrDefault(r => r.RoleName.Equals("Admin")).Id
+                    RoleId = context.Roles.FirstOrDefault(r => r.RoleName.Equals("Admin")).Id,
+                    StatusType = 2
                 });
-                context.Users.Add(new ApplicationUser {
+                context.Users.Add(new ApplicationUser
+                {
                     Username = "user",
                     FirstName = "user",
                     LastName = "user",

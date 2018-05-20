@@ -69,6 +69,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\AdminUI\AllTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUI\AllTestForm.Designer.cs">
+      <DependentUpon>AllTestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\AdminUI\ManageUsersForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,48 @@
     </Compile>
     <Compile Include="Forms\AdminUI\AdminMainForm.Designer.cs">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminUI\NewTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUI\NewTestForm.Designer.cs">
+      <DependentUpon>NewTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminUI\QwestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUI\QwestForm.Designer.cs">
+      <DependentUpon>QwestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AdminUI\ResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminUI\ResultsForm.Designer.cs">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientUI\TimeResultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientUI\TimeResultForm.Designer.cs">
+      <DependentUpon>TimeResultForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientUI\QuestionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientUI\QuestionsForm.Designer.cs">
+      <DependentUpon>QuestionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientUI\UserMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientUI\UserMainForm.Designer.cs">
+      <DependentUpon>UserMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ClientUI\UserResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ClientUI\UserResultsForm.Designer.cs">
+      <DependentUpon>UserResultsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
@@ -110,11 +158,35 @@
     <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="Validators\LoginModelValidator.cs" />
     <Compile Include="Validators\RegistrationModelValidator.cs" />
+    <EmbeddedResource Include="Forms\AdminUI\AllTestForm.resx">
+      <DependentUpon>AllTestForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminUI\ManageUsersForm.resx">
       <DependentUpon>ManageUsersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AdminUI\AdminMainForm.resx">
       <DependentUpon>AdminMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminUI\NewTestForm.resx">
+      <DependentUpon>NewTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminUI\QwestForm.resx">
+      <DependentUpon>QwestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminUI\ResultsForm.resx">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientUI\QuestionsForm.resx">
+      <DependentUpon>QuestionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientUI\TimeResultForm.resx">
+      <DependentUpon>TimeResultForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientUI\UserMainForm.resx">
+      <DependentUpon>UserMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClientUI\UserResultsForm.resx">
+      <DependentUpon>UserResultsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -154,5 +226,6 @@
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
