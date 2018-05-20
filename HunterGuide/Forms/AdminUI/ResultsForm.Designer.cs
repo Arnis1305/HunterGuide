@@ -216,6 +216,7 @@
             this.Controls.Add(this.CloseButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ResultsForm";
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Результаты тестирования";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

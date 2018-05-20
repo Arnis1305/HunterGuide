@@ -98,21 +98,21 @@
             // activateToolStripMenuItem
             // 
             this.activateToolStripMenuItem.Name = "activateToolStripMenuItem";
-            this.activateToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.activateToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.activateToolStripMenuItem.Text = "Activate";
             this.activateToolStripMenuItem.Click += new System.EventHandler(this.activateToolStripMenuItem_Click);
             // 
             // allToolStripMenuItem
             // 
             this.allToolStripMenuItem.Name = "allToolStripMenuItem";
-            this.allToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.allToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.allToolStripMenuItem.Text = "Manage Activated";
             this.allToolStripMenuItem.Click += new System.EventHandler(this.allToolStripMenuItem_Click);
             // 
             // manageRolesToolStripMenuItem
             // 
             this.manageRolesToolStripMenuItem.Name = "manageRolesToolStripMenuItem";
-            this.manageRolesToolStripMenuItem.Size = new System.Drawing.Size(205, 26);
+            this.manageRolesToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.manageRolesToolStripMenuItem.Text = "Manage Roles";
             this.manageRolesToolStripMenuItem.Click += new System.EventHandler(this.manageRolesToolStripMenuItem_Click);
             // 
@@ -169,6 +169,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AdminMainForm";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -125,7 +125,7 @@
             this.MinimumSize = new System.Drawing.Size(525, 290);
             this.Name = "LoginForm";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
-            this.Style = MetroFramework.MetroColorStyle.Lime;
+            this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

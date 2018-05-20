@@ -147,7 +147,9 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QuestionsForm";
+            this.Style = MetroFramework.MetroColorStyle.Blue;
             this.Text = "Прохождение теста";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.ResumeLayout(false);
             this.PerformLayout();
 

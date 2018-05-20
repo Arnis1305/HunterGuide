@@ -180,7 +180,7 @@ namespace HunterGuide.Forms
             this.MinimumSize = new System.Drawing.Size(564, 457);
             this.Name = "RegisterForm";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
-            this.Style = MetroFramework.MetroColorStyle.Lime;
+            this.Style = MetroFramework.MetroColorStyle.Green;
             this.Text = "Regiser";
             this.ResumeLayout(false);
             this.PerformLayout();
