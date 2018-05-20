@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimeResultForm));
             this.lab1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,7 +45,7 @@
             // lab1
             // 
             this.lab1.AutoSize = true;
-            this.lab1.Location = new System.Drawing.Point(38, 37);
+            this.lab1.Location = new System.Drawing.Point(54, 72);
             this.lab1.Name = "lab1";
             this.lab1.Size = new System.Drawing.Size(129, 17);
             this.lab1.TabIndex = 0;
@@ -53,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 81);
+            this.label2.Location = new System.Drawing.Point(57, 116);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 17);
             this.label2.TabIndex = 1;
@@ -62,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 119);
+            this.label3.Location = new System.Drawing.Point(57, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 17);
             this.label3.TabIndex = 2;
@@ -71,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 155);
+            this.label4.Location = new System.Drawing.Point(57, 190);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 17);
             this.label4.TabIndex = 3;
@@ -80,7 +81,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 192);
+            this.label1.Location = new System.Drawing.Point(60, 227);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(150, 17);
             this.label1.TabIndex = 4;
@@ -88,7 +89,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(184, 243);
+            this.button1.Location = new System.Drawing.Point(200, 278);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 31);
             this.button1.TabIndex = 5;
@@ -99,7 +100,7 @@
             // CategoryLabel
             // 
             this.CategoryLabel.AutoSize = true;
-            this.CategoryLabel.Location = new System.Drawing.Point(222, 37);
+            this.CategoryLabel.Location = new System.Drawing.Point(238, 72);
             this.CategoryLabel.Name = "CategoryLabel";
             this.CategoryLabel.Size = new System.Drawing.Size(46, 17);
             this.CategoryLabel.TabIndex = 6;
@@ -108,7 +109,7 @@
             // ThemeLabel
             // 
             this.ThemeLabel.AutoSize = true;
-            this.ThemeLabel.Location = new System.Drawing.Point(222, 81);
+            this.ThemeLabel.Location = new System.Drawing.Point(238, 116);
             this.ThemeLabel.Name = "ThemeLabel";
             this.ThemeLabel.Size = new System.Drawing.Size(46, 17);
             this.ThemeLabel.TabIndex = 7;
@@ -117,7 +118,7 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(222, 119);
+            this.NameLabel.Location = new System.Drawing.Point(238, 154);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(46, 17);
             this.NameLabel.TabIndex = 8;
@@ -126,7 +127,7 @@
             // MarkLabel
             // 
             this.MarkLabel.AutoSize = true;
-            this.MarkLabel.Location = new System.Drawing.Point(222, 155);
+            this.MarkLabel.Location = new System.Drawing.Point(238, 190);
             this.MarkLabel.Name = "MarkLabel";
             this.MarkLabel.Size = new System.Drawing.Size(46, 17);
             this.MarkLabel.TabIndex = 9;
@@ -135,7 +136,7 @@
             // ResultLabel
             // 
             this.ResultLabel.AutoSize = true;
-            this.ResultLabel.Location = new System.Drawing.Point(222, 192);
+            this.ResultLabel.Location = new System.Drawing.Point(238, 227);
             this.ResultLabel.Name = "ResultLabel";
             this.ResultLabel.Size = new System.Drawing.Size(46, 17);
             this.ResultLabel.TabIndex = 10;
@@ -145,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 314);
+            this.ClientSize = new System.Drawing.Size(485, 340);
             this.Controls.Add(this.ResultLabel);
             this.Controls.Add(this.MarkLabel);
             this.Controls.Add(this.NameLabel);
@@ -157,7 +158,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lab1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TimeResultForm";
+            this.Text = "Итоги теста:";
             this.ResumeLayout(false);
             this.PerformLayout();
 

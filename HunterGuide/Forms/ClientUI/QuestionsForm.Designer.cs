@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuestionsForm));
             this.label1 = new System.Windows.Forms.Label();
             this.QwLabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(23, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(60, 17);
             this.label1.TabIndex = 0;
@@ -51,7 +52,7 @@
             // 
             // QwLabel
             // 
-            this.QwLabel.Location = new System.Drawing.Point(12, 35);
+            this.QwLabel.Location = new System.Drawing.Point(23, 82);
             this.QwLabel.Name = "QwLabel";
             this.QwLabel.Size = new System.Drawing.Size(759, 115);
             this.QwLabel.TabIndex = 1;
@@ -60,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 167);
+            this.label2.Location = new System.Drawing.Point(23, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 17);
             this.label2.TabIndex = 2;
@@ -69,7 +70,7 @@
             // Answ1
             // 
             this.Answ1.AutoSize = true;
-            this.Answ1.Location = new System.Drawing.Point(15, 215);
+            this.Answ1.Location = new System.Drawing.Point(26, 262);
             this.Answ1.Name = "Answ1";
             this.Answ1.Size = new System.Drawing.Size(70, 21);
             this.Answ1.TabIndex = 3;
@@ -80,7 +81,7 @@
             // Answ2
             // 
             this.Answ2.AutoSize = true;
-            this.Answ2.Location = new System.Drawing.Point(15, 259);
+            this.Answ2.Location = new System.Drawing.Point(26, 306);
             this.Answ2.Name = "Answ2";
             this.Answ2.Size = new System.Drawing.Size(70, 21);
             this.Answ2.TabIndex = 4;
@@ -91,7 +92,7 @@
             // Answ3
             // 
             this.Answ3.AutoSize = true;
-            this.Answ3.Location = new System.Drawing.Point(15, 301);
+            this.Answ3.Location = new System.Drawing.Point(26, 348);
             this.Answ3.Name = "Answ3";
             this.Answ3.Size = new System.Drawing.Size(70, 21);
             this.Answ3.TabIndex = 5;
@@ -103,7 +104,7 @@
             // Answ4
             // 
             this.Answ4.AutoSize = true;
-            this.Answ4.Location = new System.Drawing.Point(15, 342);
+            this.Answ4.Location = new System.Drawing.Point(26, 389);
             this.Answ4.Name = "Answ4";
             this.Answ4.Size = new System.Drawing.Size(70, 21);
             this.Answ4.TabIndex = 6;
@@ -113,7 +114,7 @@
             // 
             // NextQwButton
             // 
-            this.NextQwButton.Location = new System.Drawing.Point(588, 406);
+            this.NextQwButton.Location = new System.Drawing.Point(599, 453);
             this.NextQwButton.Name = "NextQwButton";
             this.NextQwButton.Size = new System.Drawing.Size(183, 32);
             this.NextQwButton.TabIndex = 7;
@@ -122,7 +123,7 @@
             // 
             // Close
             // 
-            this.Close.Location = new System.Drawing.Point(15, 406);
+            this.Close.Location = new System.Drawing.Point(26, 453);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(100, 31);
             this.Close.TabIndex = 8;
@@ -134,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(812, 524);
             this.Controls.Add(this.Close);
             this.Controls.Add(this.NextQwButton);
             this.Controls.Add(this.Answ4);
@@ -144,7 +145,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.QwLabel);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QuestionsForm";
+            this.Text = "Прохождение теста";
             this.ResumeLayout(false);
             this.PerformLayout();
 

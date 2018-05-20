@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserMainForm));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TestCategory = new System.Windows.Forms.ComboBox();
@@ -54,7 +55,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(40, 86);
+            this.label1.Location = new System.Drawing.Point(65, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 17);
             this.label1.TabIndex = 1;
@@ -67,7 +68,7 @@
             "Тренировочное",
             "Зачётное",
             "Экзаменационное"});
-            this.TestCategory.Location = new System.Drawing.Point(184, 86);
+            this.TestCategory.Location = new System.Drawing.Point(209, 89);
             this.TestCategory.Name = "TestCategory";
             this.TestCategory.Size = new System.Drawing.Size(155, 24);
             this.TestCategory.TabIndex = 4;
@@ -80,7 +81,7 @@
             "Тема2",
             "Тема3",
             "Тема4"});
-            this.ThemeTest.Location = new System.Drawing.Point(184, 127);
+            this.ThemeTest.Location = new System.Drawing.Point(209, 130);
             this.ThemeTest.Name = "ThemeTest";
             this.ThemeTest.Size = new System.Drawing.Size(155, 24);
             this.ThemeTest.TabIndex = 7;
@@ -88,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 127);
+            this.label2.Location = new System.Drawing.Point(120, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 17);
             this.label2.TabIndex = 6;
@@ -110,7 +111,7 @@
             "Тренировочное",
             "Зачётное",
             "Экзаменационное"});
-            this.comboBox1.Location = new System.Drawing.Point(184, 166);
+            this.comboBox1.Location = new System.Drawing.Point(209, 169);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(155, 24);
             this.comboBox1.TabIndex = 9;
@@ -118,7 +119,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(65, 169);
+            this.label4.Location = new System.Drawing.Point(90, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(113, 17);
             this.label4.TabIndex = 10;
@@ -135,7 +136,7 @@
             // 
             // StartTestButton
             // 
-            this.StartTestButton.Location = new System.Drawing.Point(23, 216);
+            this.StartTestButton.Location = new System.Drawing.Point(48, 219);
             this.StartTestButton.Name = "StartTestButton";
             this.StartTestButton.Size = new System.Drawing.Size(155, 30);
             this.StartTestButton.TabIndex = 12;
@@ -145,7 +146,7 @@
             // 
             // ResultsButton
             // 
-            this.ResultsButton.Location = new System.Drawing.Point(206, 216);
+            this.ResultsButton.Location = new System.Drawing.Point(231, 219);
             this.ResultsButton.Name = "ResultsButton";
             this.ResultsButton.Size = new System.Drawing.Size(155, 34);
             this.ResultsButton.TabIndex = 13;
@@ -157,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 381);
+            this.ClientSize = new System.Drawing.Size(618, 332);
             this.Controls.Add(this.ResultsButton);
             this.Controls.Add(this.StartTestButton);
             this.Controls.Add(this.label5);
@@ -169,7 +170,9 @@
             this.Controls.Add(this.TestCategory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserMainForm";
+            this.Text = "Hunter Guide";
             this.Load += new System.EventHandler(this.UserMainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

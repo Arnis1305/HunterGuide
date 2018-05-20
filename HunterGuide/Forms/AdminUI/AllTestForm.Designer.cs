@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllTestForm));
             this.CloseButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TestCategory = new System.Windows.Forms.ComboBox();
@@ -47,7 +48,7 @@
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(632, 464);
+            this.CloseButton.Location = new System.Drawing.Point(643, 504);
             this.CloseButton.Name = "CloseButton";
             this.CloseButton.Size = new System.Drawing.Size(90, 32);
             this.CloseButton.TabIndex = 0;
@@ -58,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 41);
+            this.label1.Location = new System.Drawing.Point(37, 81);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 17);
             this.label1.TabIndex = 1;
@@ -71,7 +72,7 @@
             "Тренировочное",
             "Зачётное",
             "Экзаменационное"});
-            this.TestCategory.Location = new System.Drawing.Point(167, 41);
+            this.TestCategory.Location = new System.Drawing.Point(178, 81);
             this.TestCategory.Name = "TestCategory";
             this.TestCategory.Size = new System.Drawing.Size(155, 24);
             this.TestCategory.TabIndex = 3;
@@ -79,7 +80,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(337, 44);
+            this.label2.Location = new System.Drawing.Point(348, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 17);
             this.label2.TabIndex = 4;
@@ -93,7 +94,7 @@
             "Тема2",
             "Тема3",
             "Тема4"});
-            this.ThemeTest.Location = new System.Drawing.Point(426, 44);
+            this.ThemeTest.Location = new System.Drawing.Point(437, 84);
             this.ThemeTest.Name = "ThemeTest";
             this.ThemeTest.Size = new System.Drawing.Size(155, 24);
             this.ThemeTest.TabIndex = 5;
@@ -101,7 +102,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(39, 88);
+            this.label3.Location = new System.Drawing.Point(50, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 17);
             this.label3.TabIndex = 6;
@@ -110,7 +111,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 154);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 194);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(674, 304);
@@ -119,7 +120,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 131);
+            this.label4.Location = new System.Drawing.Point(37, 171);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(54, 17);
             this.label4.TabIndex = 9;
@@ -128,7 +129,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(117, 131);
+            this.label5.Location = new System.Drawing.Point(128, 171);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 10;
@@ -137,7 +138,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(222, 134);
+            this.label6.Location = new System.Drawing.Point(233, 174);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(38, 17);
             this.label6.TabIndex = 11;
@@ -146,7 +147,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(309, 134);
+            this.label7.Location = new System.Drawing.Point(320, 174);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 17);
             this.label7.TabIndex = 12;
@@ -155,7 +156,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(382, 134);
+            this.label8.Location = new System.Drawing.Point(393, 174);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(38, 17);
             this.label8.TabIndex = 13;
@@ -164,7 +165,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(480, 134);
+            this.label9.Location = new System.Drawing.Point(491, 174);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(131, 17);
             this.label9.TabIndex = 14;
@@ -173,7 +174,7 @@
             // NameTest
             // 
             this.NameTest.FormattingEnabled = true;
-            this.NameTest.Location = new System.Drawing.Point(167, 85);
+            this.NameTest.Location = new System.Drawing.Point(178, 125);
             this.NameTest.Name = "NameTest";
             this.NameTest.Size = new System.Drawing.Size(155, 24);
             this.NameTest.TabIndex = 15;
@@ -182,7 +183,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 508);
+            this.ClientSize = new System.Drawing.Size(751, 555);
             this.Controls.Add(this.NameTest);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -197,7 +198,9 @@
             this.Controls.Add(this.TestCategory);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CloseButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AllTestForm";
+            this.Text = "Все тесты";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

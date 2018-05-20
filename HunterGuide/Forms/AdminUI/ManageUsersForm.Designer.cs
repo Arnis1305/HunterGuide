@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageUsersForm));
             this.UsersListBox = new System.Windows.Forms.CheckedListBox();
             this.ActivateButton = new MetroFramework.Controls.MetroButton();
             this.CloseButton = new MetroFramework.Controls.MetroButton();
@@ -51,75 +52,77 @@
             this.UsersListBox.CheckOnClick = true;
             this.UsersListBox.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UsersListBox.FormattingEnabled = true;
-            this.UsersListBox.Location = new System.Drawing.Point(22, 200);
-            this.UsersListBox.Margin = new System.Windows.Forms.Padding(2);
+            this.UsersListBox.Location = new System.Drawing.Point(29, 246);
+            this.UsersListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UsersListBox.Name = "UsersListBox";
-            this.UsersListBox.Size = new System.Drawing.Size(514, 276);
+            this.UsersListBox.Size = new System.Drawing.Size(684, 319);
             this.UsersListBox.TabIndex = 0;
             // 
             // ActivateButton
             // 
-            this.ActivateButton.Location = new System.Drawing.Point(87, 480);
-            this.ActivateButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ActivateButton.Location = new System.Drawing.Point(116, 591);
+            this.ActivateButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ActivateButton.Name = "ActivateButton";
-            this.ActivateButton.Size = new System.Drawing.Size(62, 24);
+            this.ActivateButton.Size = new System.Drawing.Size(83, 30);
             this.ActivateButton.TabIndex = 2;
             this.ActivateButton.Text = "Activate";
             this.ActivateButton.Click += new System.EventHandler(this.ActivateButton_Click);
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(473, 480);
-            this.CloseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CloseButton.Location = new System.Drawing.Point(631, 591);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(62, 24);
+            this.CloseButton.Size = new System.Drawing.Size(83, 30);
             this.CloseButton.TabIndex = 3;
             this.CloseButton.Text = "Close";
             this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // RejectButton
             // 
-            this.RejectButton.Location = new System.Drawing.Point(21, 480);
-            this.RejectButton.Margin = new System.Windows.Forms.Padding(2);
+            this.RejectButton.Location = new System.Drawing.Point(28, 591);
+            this.RejectButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.RejectButton.Name = "RejectButton";
-            this.RejectButton.Size = new System.Drawing.Size(62, 24);
+            this.RejectButton.Size = new System.Drawing.Size(83, 30);
             this.RejectButton.TabIndex = 4;
             this.RejectButton.Text = "Reject";
             this.RejectButton.Click += new System.EventHandler(this.RejectButton_Click);
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(407, 171);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SearchButton.Location = new System.Drawing.Point(543, 210);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(62, 24);
+            this.SearchButton.Size = new System.Drawing.Size(83, 30);
             this.SearchButton.TabIndex = 5;
             this.SearchButton.Text = "Search";
             this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // SearchBox
             // 
-            this.SearchBox.Location = new System.Drawing.Point(22, 171);
+            this.SearchBox.Location = new System.Drawing.Point(29, 210);
+            this.SearchBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchBox.Name = "SearchBox";
-            this.SearchBox.Size = new System.Drawing.Size(380, 24);
+            this.SearchBox.Size = new System.Drawing.Size(507, 30);
             this.SearchBox.TabIndex = 6;
             // 
             // lable
             // 
             this.lable.AutoSize = true;
             this.lable.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lable.Location = new System.Drawing.Point(23, 152);
+            this.lable.Location = new System.Drawing.Point(31, 187);
+            this.lable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lable.Name = "lable";
-            this.lable.Size = new System.Drawing.Size(271, 16);
+            this.lable.Size = new System.Drawing.Size(340, 19);
             this.lable.TabIndex = 7;
             this.lable.Text = "Search by username, firstname and lastname";
             // 
             // DropButton
             // 
-            this.DropButton.Location = new System.Drawing.Point(473, 171);
-            this.DropButton.Margin = new System.Windows.Forms.Padding(2);
+            this.DropButton.Location = new System.Drawing.Point(631, 210);
+            this.DropButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DropButton.Name = "DropButton";
-            this.DropButton.Size = new System.Drawing.Size(62, 24);
+            this.DropButton.Size = new System.Drawing.Size(83, 30);
             this.DropButton.TabIndex = 8;
             this.DropButton.Text = "Drop";
             this.DropButton.Click += new System.EventHandler(this.DropButton_Click);
@@ -128,9 +131,10 @@
             // 
             this.NotActivatedUsersRadioButton.AutoSize = true;
             this.NotActivatedUsersRadioButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NotActivatedUsersRadioButton.Location = new System.Drawing.Point(25, 69);
+            this.NotActivatedUsersRadioButton.Location = new System.Drawing.Point(33, 85);
+            this.NotActivatedUsersRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NotActivatedUsersRadioButton.Name = "NotActivatedUsersRadioButton";
-            this.NotActivatedUsersRadioButton.Size = new System.Drawing.Size(168, 15);
+            this.NotActivatedUsersRadioButton.Size = new System.Drawing.Size(186, 17);
             this.NotActivatedUsersRadioButton.Style = MetroFramework.MetroColorStyle.Orange;
             this.NotActivatedUsersRadioButton.TabIndex = 9;
             this.NotActivatedUsersRadioButton.TabStop = true;
@@ -142,9 +146,10 @@
             // 
             this.ActivatedUsersRadioButton.AutoSize = true;
             this.ActivatedUsersRadioButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ActivatedUsersRadioButton.Location = new System.Drawing.Point(199, 69);
+            this.ActivatedUsersRadioButton.Location = new System.Drawing.Point(265, 85);
+            this.ActivatedUsersRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ActivatedUsersRadioButton.Name = "ActivatedUsersRadioButton";
-            this.ActivatedUsersRadioButton.Size = new System.Drawing.Size(147, 15);
+            this.ActivatedUsersRadioButton.Size = new System.Drawing.Size(163, 17);
             this.ActivatedUsersRadioButton.Style = MetroFramework.MetroColorStyle.Orange;
             this.ActivatedUsersRadioButton.TabIndex = 10;
             this.ActivatedUsersRadioButton.TabStop = true;
@@ -156,9 +161,10 @@
             // 
             this.UserRolesRadioButton.AutoSize = true;
             this.UserRolesRadioButton.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UserRolesRadioButton.Location = new System.Drawing.Point(352, 69);
+            this.UserRolesRadioButton.Location = new System.Drawing.Point(469, 85);
+            this.UserRolesRadioButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserRolesRadioButton.Name = "UserRolesRadioButton";
-            this.UserRolesRadioButton.Size = new System.Drawing.Size(119, 15);
+            this.UserRolesRadioButton.Size = new System.Drawing.Size(134, 17);
             this.UserRolesRadioButton.Style = MetroFramework.MetroColorStyle.Orange;
             this.UserRolesRadioButton.TabIndex = 11;
             this.UserRolesRadioButton.TabStop = true;
@@ -170,20 +176,21 @@
             // 
             this.UserRolesComboBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.UserRolesComboBox.FormattingEnabled = true;
-            this.UserRolesComboBox.ItemHeight = 23;
-            this.UserRolesComboBox.Location = new System.Drawing.Point(23, 114);
+            this.UserRolesComboBox.ItemHeight = 24;
+            this.UserRolesComboBox.Location = new System.Drawing.Point(31, 140);
+            this.UserRolesComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserRolesComboBox.Name = "UserRolesComboBox";
-            this.UserRolesComboBox.Size = new System.Drawing.Size(379, 29);
+            this.UserRolesComboBox.Size = new System.Drawing.Size(504, 30);
             this.UserRolesComboBox.Style = MetroFramework.MetroColorStyle.Orange;
             this.UserRolesComboBox.TabIndex = 12;
             this.UserRolesComboBox.SelectedIndexChanged += new System.EventHandler(this.UserRolesComboBox_SelectedIndexChanged);
             // 
             // ChangeRoleButton
             // 
-            this.ChangeRoleButton.Location = new System.Drawing.Point(21, 480);
-            this.ChangeRoleButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ChangeRoleButton.Location = new System.Drawing.Point(28, 591);
+            this.ChangeRoleButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ChangeRoleButton.Name = "ChangeRoleButton";
-            this.ChangeRoleButton.Size = new System.Drawing.Size(128, 24);
+            this.ChangeRoleButton.Size = new System.Drawing.Size(171, 30);
             this.ChangeRoleButton.TabIndex = 13;
             this.ChangeRoleButton.Text = "Add to role...";
             this.ChangeRoleButton.Click += new System.EventHandler(this.ChangeRoleButton_Click);
@@ -192,10 +199,11 @@
             // 
             this.TargetRoleComboBox.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.TargetRoleComboBox.FormattingEnabled = true;
-            this.TargetRoleComboBox.ItemHeight = 23;
-            this.TargetRoleComboBox.Location = new System.Drawing.Point(407, 114);
+            this.TargetRoleComboBox.ItemHeight = 24;
+            this.TargetRoleComboBox.Location = new System.Drawing.Point(543, 140);
+            this.TargetRoleComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TargetRoleComboBox.Name = "TargetRoleComboBox";
-            this.TargetRoleComboBox.Size = new System.Drawing.Size(128, 29);
+            this.TargetRoleComboBox.Size = new System.Drawing.Size(169, 30);
             this.TargetRoleComboBox.Style = MetroFramework.MetroColorStyle.Orange;
             this.TargetRoleComboBox.TabIndex = 14;
             // 
@@ -203,9 +211,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(23, 95);
+            this.label1.Location = new System.Drawing.Point(31, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.Size = new System.Drawing.Size(75, 19);
             this.label1.TabIndex = 15;
             this.label1.Text = "User role";
             // 
@@ -213,17 +222,18 @@
             // 
             this.TargetRoleLable.AutoSize = true;
             this.TargetRoleLable.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TargetRoleLable.Location = new System.Drawing.Point(409, 95);
+            this.TargetRoleLable.Location = new System.Drawing.Point(545, 117);
+            this.TargetRoleLable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TargetRoleLable.Name = "TargetRoleLable";
-            this.TargetRoleLable.Size = new System.Drawing.Size(68, 16);
+            this.TargetRoleLable.Size = new System.Drawing.Size(85, 19);
             this.TargetRoleLable.TabIndex = 16;
             this.TargetRoleLable.Text = "Target role";
             // 
             // ManageUsersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(558, 519);
+            this.ClientSize = new System.Drawing.Size(744, 639);
             this.Controls.Add(this.TargetRoleLable);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TargetRoleComboBox);
@@ -240,11 +250,13 @@
             this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.ActivateButton);
             this.Controls.Add(this.UsersListBox);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(558, 519);
-            this.MinimumSize = new System.Drawing.Size(558, 519);
+            this.MaximumSize = new System.Drawing.Size(744, 639);
+            this.MinimumSize = new System.Drawing.Size(744, 639);
             this.Name = "ManageUsersForm";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Manage users";
             this.ResumeLayout(false);

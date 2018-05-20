@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QwestForm));
             this.NextButton = new System.Windows.Forms.Button();
             this.RightAnswerBox = new System.Windows.Forms.TextBox();
             this.answ4 = new System.Windows.Forms.TextBox();
@@ -40,7 +41,7 @@
             // 
             // NextButton
             // 
-            this.NextButton.Location = new System.Drawing.Point(675, 341);
+            this.NextButton.Location = new System.Drawing.Point(693, 396);
             this.NextButton.Margin = new System.Windows.Forms.Padding(4);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(100, 28);
@@ -50,7 +51,7 @@
             // 
             // RightAnswerBox
             // 
-            this.RightAnswerBox.Location = new System.Drawing.Point(157, 298);
+            this.RightAnswerBox.Location = new System.Drawing.Point(175, 353);
             this.RightAnswerBox.Margin = new System.Windows.Forms.Padding(4);
             this.RightAnswerBox.Name = "RightAnswerBox";
             this.RightAnswerBox.Size = new System.Drawing.Size(617, 22);
@@ -58,7 +59,7 @@
             // 
             // answ4
             // 
-            this.answ4.Location = new System.Drawing.Point(97, 251);
+            this.answ4.Location = new System.Drawing.Point(115, 306);
             this.answ4.Margin = new System.Windows.Forms.Padding(4);
             this.answ4.Name = "answ4";
             this.answ4.Size = new System.Drawing.Size(677, 22);
@@ -66,7 +67,7 @@
             // 
             // answ3
             // 
-            this.answ3.Location = new System.Drawing.Point(97, 203);
+            this.answ3.Location = new System.Drawing.Point(115, 258);
             this.answ3.Margin = new System.Windows.Forms.Padding(4);
             this.answ3.Name = "answ3";
             this.answ3.Size = new System.Drawing.Size(677, 22);
@@ -74,7 +75,7 @@
             // 
             // answ2
             // 
-            this.answ2.Location = new System.Drawing.Point(97, 150);
+            this.answ2.Location = new System.Drawing.Point(115, 205);
             this.answ2.Margin = new System.Windows.Forms.Padding(4);
             this.answ2.Name = "answ2";
             this.answ2.Size = new System.Drawing.Size(677, 22);
@@ -82,7 +83,7 @@
             // 
             // answ1
             // 
-            this.answ1.Location = new System.Drawing.Point(97, 98);
+            this.answ1.Location = new System.Drawing.Point(115, 153);
             this.answ1.Margin = new System.Windows.Forms.Padding(4);
             this.answ1.Name = "answ1";
             this.answ1.Size = new System.Drawing.Size(677, 22);
@@ -90,7 +91,7 @@
             // 
             // QwestBox
             // 
-            this.QwestBox.Location = new System.Drawing.Point(20, 34);
+            this.QwestBox.Location = new System.Drawing.Point(38, 89);
             this.QwestBox.Margin = new System.Windows.Forms.Padding(4);
             this.QwestBox.Multiline = true;
             this.QwestBox.Name = "QwestBox";
@@ -100,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 14);
+            this.label1.Location = new System.Drawing.Point(34, 69);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 306);
@@ -112,7 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(785, 382);
+            this.ClientSize = new System.Drawing.Size(817, 460);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RightAnswerBox);
             this.Controls.Add(this.answ4);
@@ -121,7 +122,9 @@
             this.Controls.Add(this.answ1);
             this.Controls.Add(this.QwestBox);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "QwestForm";
+            this.Text = "Новый вопрос";
             this.ResumeLayout(false);
             this.PerformLayout();
 
