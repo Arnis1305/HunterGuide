@@ -20,5 +20,7 @@ namespace HunterGuide.EF
         public DbSet<TestType> TestTypes { get; set; }
 
         public DbSet<UserTestResult> UserTestsResults { get; set; }
+
+        public DbSet<Quiz> Quizes { get; set; }
     }
 }

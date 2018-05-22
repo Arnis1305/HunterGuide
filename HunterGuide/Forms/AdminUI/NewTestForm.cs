@@ -56,8 +56,8 @@ namespace HunterGuide.Forms.AdminUI
             var model = GetNewTestModelFromInputs();
             try {
                 newTestModelValidator.Validate(model);
-                AddModelToDatabase(model);
-                ShowSteps(Convert.ToInt32(NumQwBox.Value));
+                var test = AddModelToDatabase(model);
+                ShowSteps(test.Id, Convert.ToInt32(NumQwBox.Value));
             }
             catch (ValidationException ex) {
                 MessageBox.Show(ex.Message);
@@ -69,15 +69,37 @@ namespace HunterGuide.Forms.AdminUI
             this.Close();
         }
 
-        private void ShowSteps(int numberOfSteps) 
+        private void ShowSteps(Guid testId, int numberOfSteps) 
         {
             for (int i = 0; i < numberOfSteps; ) 
             {
-                QwestForm QF = new QwestForm(i + 1);
+                bool isAllowBreak = false;
+
+                QwestForm QF = new QwestForm(testId, i + 1, numberOfSteps);
                 QF.FormClosed += (s, args) => {
                     i++;
+                    if (args.CloseReason == CloseReason.UserClosing) 
+                    {
+                        isAllowBreak = true;
+                    }
                 };
+
+                if (isAllowBreak) 
+                {
+                    break;
+                }
+
                 QF.ShowDialog();
+            }
+        }
+
+        private void OnCascadeDelete(Guid testId) 
+        {
+            var test = context.Tests.FirstOrDefault(t => t.Id == testId);
+            if (test != null) 
+            {
+                context.Tests.Remove(test);
+                context.SaveChanges();
             }
         }
 

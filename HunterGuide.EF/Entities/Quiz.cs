@@ -1,7 +1,8 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace HunterGuide.EF.Entities {
+namespace HunterGuide.EF.Entities 
+{
     public class Quiz 
     {
         public Quiz() 
@@ -10,6 +11,9 @@ namespace HunterGuide.EF.Entities {
         }
 
         public Guid Id { get; set; }
+
+        [Required]
+        public string Question { get; set; }
 
         [Required]
         public string FirstAnswer { get; set; }

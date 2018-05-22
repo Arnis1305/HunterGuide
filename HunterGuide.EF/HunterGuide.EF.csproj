@@ -83,6 +83,14 @@
     <Compile Include="Migrations\201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.Designer.cs">
       <DependentUpon>201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805220732051_AddQuestionFieldToQuizEntity.cs" />
+    <Compile Include="Migrations\201805220732051_AddQuestionFieldToQuizEntity.Designer.cs">
+      <DependentUpon>201805220732051_AddQuestionFieldToQuizEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805220803425_SyncModel.cs" />
+    <Compile Include="Migrations\201805220803425_SyncModel.Designer.cs">
+      <DependentUpon>201805220803425_SyncModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -111,6 +119,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.resx">
       <DependentUpon>201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805220732051_AddQuestionFieldToQuizEntity.resx">
+      <DependentUpon>201805220732051_AddQuestionFieldToQuizEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805220803425_SyncModel.resx">
+      <DependentUpon>201805220803425_SyncModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
