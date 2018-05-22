@@ -17,21 +17,11 @@ namespace HunterGuide.Forms.ClientUI
     {
         private readonly ApplicationUser user;
 
-        public UserMainForm()
+        public UserMainForm(ApplicationUser user)
         {
             InitializeComponent();
 
             this.user = user;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void UserMainForm_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void ResultsButton_Click(object sender, EventArgs e)
@@ -44,6 +34,11 @@ namespace HunterGuide.Forms.ClientUI
         {
             QuestionsForm QF = new QuestionsForm();
             QF.ShowDialog();
+        }
+
+        private void LogoutButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

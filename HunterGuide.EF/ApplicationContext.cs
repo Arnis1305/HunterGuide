@@ -1,10 +1,5 @@
 ﻿using HunterGuide.EF.Entities;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HunterGuide.EF
 {
@@ -17,5 +12,13 @@ namespace HunterGuide.EF
         public DbSet<ApplicationUser> Users { get; set; }
 
         public DbSet<Role> Roles { get; set; }
+
+        public DbSet<Test> Tests { get; set; }
+
+        public DbSet<TestTopic> TestTopics { get; set; }
+
+        public DbSet<TestType> TestTypes { get; set; }
+
+        public DbSet<UserTestResult> UserTestsResults { get; set; }
     }
 }

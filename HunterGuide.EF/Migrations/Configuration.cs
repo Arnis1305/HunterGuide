@@ -36,6 +36,22 @@ namespace HunterGuide.EF.Migrations
                     StatusType = 2
                 });
             }
+
+            if (context.TestTypes.Count() == 0) 
+            {
+                context.TestTypes.Add(new TestType { TypeName = "Training test" });
+                context.TestTypes.Add(new TestType { TypeName = "Set-off test" });
+                context.TestTypes.Add(new TestType { TypeName = "Exam test" });
+            }
+
+            if (context.TestTopics.Count() == 0)
+            {
+                context.TestTopics.Add(new TestTopic { TopicName = "Test 1" });
+                context.TestTopics.Add(new TestTopic { TopicName = "Test 2" });
+                context.TestTopics.Add(new TestTopic { TopicName = "Test 3" });
+                context.TestTopics.Add(new TestTopic { TopicName = "Test 4" });
+                context.TestTopics.Add(new TestTopic { TopicName = "Test 5" });
+            }
         }
     }
 }

@@ -49,7 +49,12 @@
   <ItemGroup>
     <Compile Include="ApplicationContext.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
+    <Compile Include="Entities\Quiz.cs" />
     <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\Test.cs" />
+    <Compile Include="Entities\TestTopic.cs" />
+    <Compile Include="Entities\TestType.cs" />
+    <Compile Include="Entities\UserTestResult.cs" />
     <Compile Include="Migrations\201805141151249_Initial.cs" />
     <Compile Include="Migrations\201805141151249_Initial.Designer.cs">
       <DependentUpon>201805141151249_Initial.cs</DependentUpon>
@@ -65,6 +70,18 @@
     <Compile Include="Migrations\201805182116497_UpdateApplicationUserAddStatusTypeFild.cs" />
     <Compile Include="Migrations\201805182116497_UpdateApplicationUserAddStatusTypeFild.Designer.cs">
       <DependentUpon>201805182116497_UpdateApplicationUserAddStatusTypeFild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805212239089_TestsAdded.cs" />
+    <Compile Include="Migrations\201805212239089_TestsAdded.Designer.cs">
+      <DependentUpon>201805212239089_TestsAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805212254051_AddTableTopicsToDatabase.cs" />
+    <Compile Include="Migrations\201805212254051_AddTableTopicsToDatabase.Designer.cs">
+      <DependentUpon>201805212254051_AddTableTopicsToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.cs" />
+    <Compile Include="Migrations\201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.Designer.cs">
+      <DependentUpon>201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,6 +102,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805182116497_UpdateApplicationUserAddStatusTypeFild.resx">
       <DependentUpon>201805182116497_UpdateApplicationUserAddStatusTypeFild.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805212239089_TestsAdded.resx">
+      <DependentUpon>201805212239089_TestsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805212254051_AddTableTopicsToDatabase.resx">
+      <DependentUpon>201805212254051_AddTableTopicsToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.resx">
+      <DependentUpon>201805220041470_AddQuizesTableThatSeparateTestOutOfAnswers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

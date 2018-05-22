@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HunterGuide.EF.Entities
@@ -27,5 +28,7 @@ namespace HunterGuide.EF.Entities
         public Guid RoleId { get; set; }
 
         public Role Role { get; set; }
+
+        public List<UserTestResult> UserTestResults { get; set; }
     }
 }

@@ -13,7 +13,7 @@ namespace HunterGuide.Forms.AdminUI
 {
     public partial class QwestForm : MetroForm
     {
-        public QwestForm()
+        public QwestForm(int stepNumber)
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
