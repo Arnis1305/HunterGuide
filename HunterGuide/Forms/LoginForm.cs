@@ -1,7 +1,9 @@
 ﻿using HunterGuide.EF.Entities;
 using HunterGuide.Exceptions;
 using HunterGuide.Forms.AdminUI;
+using HunterGuide.Forms.ClientUI;
 using HunterGuide.Helpers;
+using HunterGuide.Helpers.Emums;
 using HunterGuide.Models;
 using HunterGuide.Singletons;
 using HunterGuide.Validators;
@@ -72,16 +74,40 @@ namespace HunterGuide.Forms
                 ShowAdminUIMainForm(user);
                 return;
             }
-
-            if (UserInRole(user, "User")) {
-                MessageBox.Show("you in role 'User'");
+            if (UserInRole(user, "User") && IsAbleToLogin(user)) 
+            {
+                ShowUserUIMainForm(user);
+                return;
             }
         }
 
         private bool UserInRole(ApplicationUser user, string roleName) 
         {
             return context.Roles.Any(r => r.RoleName.Equals(roleName) && r.Id == user.RoleId);
-        } 
+        }
+
+        private bool IsAbleToLogin(ApplicationUser user) 
+        {
+            if (user.StatusType == (int)UserStatusType.NotActivated) 
+            {
+                MessageBox.Show("You are not activated yet, please contact your local administrator for activation");
+                return false;
+            }
+            if (user.StatusType == (int)UserStatusType.Rejected) 
+            {
+                MessageBox.Show("You have been rejected and not gonna able to use our system");
+                return false;
+            }
+            return true;
+        }
+
+        private void ShowUserUIMainForm(ApplicationUser user)
+        {
+            UserMainForm userMainForm = new UserMainForm(user);
+            Hide();
+            userMainForm.FormClosed += (s, args) => HandleChildFormClosed(s, args);
+            userMainForm.Show();
+        }
 
         private void ShowAdminUIMainForm(ApplicationUser user)
         {

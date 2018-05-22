@@ -47,5 +47,23 @@ namespace HunterGuide.Forms.AdminUI
             ManageUsersForm manageUsersForm = new ManageUsersForm(ManageUsersFormType.ManageUserRoles);
             manageUsersForm.Show();
         }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NewTestForm NF = new NewTestForm();
+            NF.ShowDialog();
+        }
+
+        private void showAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AllTestForm ATF = new AllTestForm();
+            ATF.ShowDialog();
+        }
+
+        private void resultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResultsForm RF = new ResultsForm();
+            RF.ShowDialog();
+        }
     }
 }

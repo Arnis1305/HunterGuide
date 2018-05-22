@@ -30,6 +30,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMainForm));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.testToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -74,12 +75,14 @@
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
             this.newToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // showAllToolStripMenuItem
             // 
             this.showAllToolStripMenuItem.Name = "showAllToolStripMenuItem";
             this.showAllToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.showAllToolStripMenuItem.Text = "Show All";
+            this.showAllToolStripMenuItem.Click += new System.EventHandler(this.showAllToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
@@ -118,6 +121,7 @@
             this.resultsToolStripMenuItem.Name = "resultsToolStripMenuItem";
             this.resultsToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.resultsToolStripMenuItem.Text = "Results";
+            this.resultsToolStripMenuItem.Click += new System.EventHandler(this.resultsToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -135,8 +139,8 @@
             // 
             // LogoutButton
             // 
-            this.LogoutButton.Location = new System.Drawing.Point(430, 23);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2);
+            this.LogoutButton.Location = new System.Drawing.Point(451, 334);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LogoutButton.Name = "LogoutButton";
             this.LogoutButton.Size = new System.Drawing.Size(62, 24);
             this.LogoutButton.TabIndex = 1;
@@ -161,9 +165,11 @@
             this.Controls.Add(this.WelcomeLable);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminMainForm";
+            this.Style = MetroFramework.MetroColorStyle.Orange;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

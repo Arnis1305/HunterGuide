@@ -10,6 +10,12 @@ namespace HunterGuide.Util {
             CreateMap<RegistrationModel, ApplicationUser>()
                .ForMember(au => au.PasswordHash, opt => opt.MapFrom(src => src.Password))
                .ReverseMap();
+
+            CreateMap<NewTestModel, Test>()
+                .ReverseMap();
+
+            CreateMap<QuizModel, Quiz>()
+                .ReverseMap();
         }
     }
 }
