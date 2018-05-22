@@ -91,6 +91,7 @@ namespace HunterGuide.Forms.AdminUI
 
                 QF.ShowDialog();
             }
+            Close();
         }
 
         private void OnCascadeDelete(Guid testId) 

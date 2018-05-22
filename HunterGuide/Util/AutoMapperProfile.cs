@@ -16,6 +16,9 @@ namespace HunterGuide.Util {
 
             CreateMap<QuizModel, Quiz>()
                 .ReverseMap();
+
+            CreateMap<QuizViewModel, Quiz>()
+                .ReverseMap();
         }
     }
 }
