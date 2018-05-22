@@ -173,7 +173,6 @@
             this.Name = "NewTestForm";
             this.Style = MetroFramework.MetroColorStyle.Orange;
             this.Text = "Новый тест";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.Load += new System.EventHandler(this.NewTestForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.NumQwBox)).EndInit();
             this.ResumeLayout(false);

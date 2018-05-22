@@ -87,7 +87,7 @@ namespace HunterGuide.Forms
 
         private void ShowUserUIMainForm(ApplicationUser user)
         {
-            UserMainForm userMainForm = new UserMainForm();
+            UserMainForm userMainForm = new UserMainForm(user);
             Hide();
             userMainForm.FormClosed += (s, args) => HandleChildFormClosed(s, args);
             userMainForm.Show();

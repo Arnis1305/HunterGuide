@@ -17,7 +17,7 @@ namespace HunterGuide.Forms.ClientUI
     {
         private readonly ApplicationUser user;
 
-        public UserMainForm()
+        public UserMainForm(ApplicationUser user)
         {
             InitializeComponent();
 

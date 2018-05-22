@@ -149,7 +149,6 @@
             this.Name = "QuestionsForm";
             this.Style = MetroFramework.MetroColorStyle.Blue;
             this.Text = "Прохождение теста";
-            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.ResumeLayout(false);
             this.PerformLayout();
 
