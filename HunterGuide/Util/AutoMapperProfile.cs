@@ -19,6 +19,13 @@ namespace HunterGuide.Util {
 
             CreateMap<QuizViewModel, Quiz>()
                 .ReverseMap();
+
+            CreateMap<UserTestResult, UserResultModel>()
+                .ForMember(au => au.Username, opt => opt.MapFrom(src => src.ApplicationUser.Username))
+                .ForMember(au => au.TestName, opt => opt.MapFrom(src => src.Test.Name))
+                .ForMember(au => au.TestType, opt => opt.MapFrom(src => src.Test.TestType.TypeName))
+                .ReverseMap();
+                
         }
     }
 }
